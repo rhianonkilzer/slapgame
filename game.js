@@ -1,7 +1,7 @@
 var health = 100;
 
 function punch(){
-    health -= 1;
+    health -= 2;
     console.log(health)
 }
 
@@ -9,7 +9,7 @@ punch()
 
 
 function gassy(){
-    health -=15;
+    health -=13;
     console.log(health)
 }
 
@@ -22,4 +22,4 @@ function stabby(){
 }
 gassy()
 
-document.getElementById(health)
+document.getElementById('health')
