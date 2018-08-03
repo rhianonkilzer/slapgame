@@ -37,3 +37,8 @@ background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.315);
   }
 
+.reset-button{
+    background-color: rgb(190, 2, 2);
+    border-radius: 50%;
+   color: beige;
+}

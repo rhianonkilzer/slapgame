@@ -1,25 +1,39 @@
-var health = 100;
+let health = 100;
+let hits = 0;
 
-function punch(){
+
+function punch() {
     health -= 2;
-    console.log(health)
+    hits++
+    update()
 }
 
-punch()
-
-
-function gassy(){
-    health -=13;
-    console.log(health)
+function gassy() {
+    health -= 13;
+    hits++
+    update()
 }
 
-gassy()
-
-
-function stabby(){
+function stabby() {
     health -= 20;
+    hits++
+    update()
+}
+
+
+function reset(){
+    health = 100;
+    hits = 0;
+    update()
+}
+
+function update() {
+    if(health < 0){
+    health = 0;
+    }
+    document.getElementById('health').innerText = `${health}%`
+    document.getElementById('health').style = `width: ${health}%`
     console.log(health)
 }
-gassy()
 
-document.getElementById('health')
+update()
