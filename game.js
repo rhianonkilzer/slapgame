@@ -3,7 +3,7 @@ let hits = 0;
 
 
 function punch() {
-    health -= 2;
+    health -= 3;
     hits++
     update()
 }
@@ -31,6 +31,7 @@ function update() {
     if(health < 0){
     health = 0;
     }
+    document.getElementById('hits').innerText = `${hits}`
     document.getElementById('health').innerText = `${health}%`
     document.getElementById('health').style = `width: ${health}%`
     console.log(health)
