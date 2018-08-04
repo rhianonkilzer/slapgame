@@ -6,44 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stabby Game</title>
-    <link rel="stylesheet" href="game.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="game.css">
 </head>
 
 <body>
     <div class="row head-name">
-        <div class="col-sm-2">
+        <div class="col-12 text-center">
             <h3>Zombie!!</h3>
-            <div class="progress">
-                <div id="health" class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%</div>
+            <div class="row justify-content-center">
+                <div class="col-2 progress">
+                    <div id="health" class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="10" aria-valuemin="0"
+                        aria-valuemax="100">100%</div>
+                </div>
             </div>
-            <button onclick="reset()" class="reset-button">Reset</button>
+            <div class="row justify-content-center">
+                <div class="col-2 enemy-target">
+                </div>
+            </div>
             <h4>Hits:
-                    <span id="hits">_</span>
-                  </h4>
+                <span id="hits">_</span>
+            </h4>
+            <button onclick="reset()" class="reset-button">Reset</button>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-4 enemy-target mt-3">
-
-
-        </div>
     </div>
 
-    <footer>
-        <h2 class="text-center">Attack!</h2>
-        <div class="container">
-            <img src="stabby.png" alt="stabby">
-            <button onclick="stabby()" class="btn">Stab</button>
+    <footer class="row">
+
+        <div class="col-12 attacks">
+            <h2 class="text-center">Attack!</h2>
+            <div class="row">
+
+                <div class="col-4 custom">  
+                    <img src="stabby.png" alt="stabby">
+                    <button onclick="stabby()" class="btn padding-right">Stab</button>
+                </div>
+                <div class="col-4 custom">
+                    <img src="mask.jpg" alt="gassy">
+                    <button onclick="gassy()" class="btn padding-right">Gas</button>
+                </div>
+                <div class="col-4 custom">
+                    <img src="punch.png" alt="punch">
+                    <button onclick="punch()" class="btn padding-right">Punch</button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <img src="mask.jpg" alt="gassy">
-            <button onclick="gassy()" class="btn">Gas</button>
-        </div>
-        <div class="container">
-            <img src="punch.png" alt="punch">
-            <button onclick="punch()" class="btn">Punch</button>
+
+        <div class="col-12 bonuses">
+            <h2 class="text-center">Bonuses</h2>
+            <div class="row">
+
+                <div class="col-4 custom">
+                    <img src="shield.jpg" alt="shield">
+                    <button onclick="shield()" class="btn">Shield</button>
+                </div>
+                <div class="col-4 custom">
+                    <img src="zombiebrains.png" alt="brains">
+                    <button onclick="brains()" class="btn">Eat Brains</button>
+                </div>
+                <div class="col-4 custom">
+                    <img src="dodge.jpg" alt="dodge">
+                    <button onclick="dodge()" class="btn">Dodge</button>
+                </div>
+            </div>
         </div>
     </footer>
 
