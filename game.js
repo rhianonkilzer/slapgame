@@ -57,8 +57,6 @@ function addMods() {
 
 function shield() {
     zombie.items.push(availableItems.shield)
-
-
 }
 
 function dodge() {

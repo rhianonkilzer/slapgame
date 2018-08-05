@@ -1,3 +1,8 @@
+body{
+  background-image: linear-gradient(to top, #277e6f 0%, #ffffff 100%);
+
+}
+
 .enemy-target {
     background-image: url(zombie.png);
 max-width: 200px;
