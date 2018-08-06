@@ -8,7 +8,18 @@ background-repeat: no-repeat;
 .progress{
   padding: 0px;
 }
+   
+body{
+  background-image: linear-gradient(to top, #ffffff 0%, #2b5340 100%);
+}
 
+.bonuses{
+  background-color: white;
+}
+
+.attacks{
+  background-color: white;
+}
 
 .custom {
     position: relative;
