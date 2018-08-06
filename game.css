@@ -1,16 +1,19 @@
 .enemy-target {
     background-image: url(zombie.png);
-max-width: 200px;
-height: 300px;
-background-size: contain;
-background-repeat: no-repeat;
+    max-width: 200px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  
 }
 .progress{
   padding: 0px;
 }
    
 body{
-  background-image: linear-gradient(to top, #ffffff 0%, #2b5340 100%);
+  background-image: url(zback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
  .bonuses{
@@ -50,15 +53,15 @@ h2{
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
   }
   
   .custom .btn:hover {
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.548);
   }
 
 .reset-button{
     background-color: rgb(190, 2, 2);
     border-radius: 50%;
-   color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
 }
