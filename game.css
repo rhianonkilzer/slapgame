@@ -13,12 +13,18 @@ body{
   background-image: linear-gradient(to top, #ffffff 0%, #2b5340 100%);
 }
 
-.bonuses{
+ .bonuses{
   background-color: white;
+  height: 201px;
 }
 
 .attacks{
   background-color: white;
+}
+
+h2{
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px 6px #555555;
 }
 
 .custom {
