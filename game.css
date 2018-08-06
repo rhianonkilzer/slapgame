@@ -14,12 +14,14 @@ body{
   background-image: url(zback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
 }
 
  .bonuses{
   background-color: white;
   height: 201px;
 }
+
 
 .attacks{
   background-color: white;
@@ -35,7 +37,8 @@ h2{
     width: 50%;
     padding-left: 172px;
   }
-  
+ 
+
  
   .custom img {
     width: 100px;

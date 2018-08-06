@@ -11,71 +11,74 @@
 </head>
 
 <body>
-    <div class="row head-name">
-        <div class="col-12 text-center">
-            <h2>Zombie!!</h2>
-            <div class="row justify-content-center">
-                <div class="col-2 progress">
-                    <div id="health" class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="10" aria-valuemin="0"
+    <div class="container-fluid">
+
+        <div class="row head-name">
+            <div class="col-12 text-center">
+                <h2>Zombie!!</h2>
+                <div class="row justify-content-center">
+                    <div class="col-2 progress">
+                        <div id="health" class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="10" aria-valuemin="0"
                         aria-valuemax="100">100%</div>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-2 enemy-target">
+                <div class="row justify-content-center">
+                    <div class="col-2 enemy-target">
+                    </div>
                 </div>
+                <h4>Hits:
+                    <span id="hits">_</span>
+                </h4>
+                <button onclick="reset()" class="reset-button">Reset</button>
             </div>
-            <h4>Hits:
-                <span id="hits">_</span>
-            </h4>
-            <button onclick="reset()" class="reset-button">Reset</button>
         </div>
+        
+        <div class="row">
+        </div>
+        
+        <footer class="row">
+            
+            <div class="col-12 attacks mt-3">
+                <h2 class="text-center">Attack!</h2>
+                <div class="row mt-4">
+                    
+                    <div class="col-4 custom">
+                        <img src="stabby.png" alt="stabby">
+                        <button onclick="stabby()" class="btn padding-right">Stab</button>
+                    </div>
+                    <div class="col-4 custom">
+                        <img src="mask.jpg" alt="gassy">
+                        <button onclick="gassy()" class="btn padding-right">Gas</button>
+                    </div>
+                    <div class="col-4 custom">
+                        <img src="punch.png" alt="punch">
+                        <button onclick="punch()" class="btn padding-right">Punch</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 bonuses">
+                <h2 class="text-center">Bonuses</h2>
+                <div class="row mt-4">
+                    
+                    <div class="col-4 custom">
+                        <img src="shield.jpg" alt="shield">
+                        <button onclick="shield()" class="btn">Shield</button>
+                    </div>
+                    <div class="col-4 custom">
+                        <img src="zombiebrains.png" alt="brains">
+                        <button onclick="brains()" class="btn">Eat Brains</button>
+                    </div>
+                    <div class="col-4 custom">
+                        <img src="dodge.jpg" alt="dodge">
+                        <button onclick="dodge()" class="btn">Dodge</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
     </div>
-
-    <div class="row">
-    </div>
-
-    <footer class="row">
-
-        <div class="col-12 attacks mt-3">
-            <h2 class="text-center">Attack!</h2>
-            <div class="row mt-4">
-
-                <div class="col-4 custom">
-                    <img src="stabby.png" alt="stabby">
-                    <button onclick="stabby()" class="btn padding-right">Stab</button>
-                </div>
-                <div class="col-4 custom">
-                    <img src="mask.jpg" alt="gassy">
-                    <button onclick="gassy()" class="btn padding-right">Gas</button>
-                </div>
-                <div class="col-4 custom">
-                    <img src="punch.png" alt="punch">
-                    <button onclick="punch()" class="btn padding-right">Punch</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 bonuses">
-            <h2 class="text-center">Bonuses</h2>
-            <div class="row mt-4">
-
-                <div class="col-4 custom">
-                    <img src="shield.jpg" alt="shield">
-                    <button onclick="shield()" class="btn">Shield</button>
-                </div>
-                <div class="col-4 custom">
-                    <img src="zombiebrains.png" alt="brains">
-                    <button onclick="brains()" class="btn">Eat Brains</button>
-                </div>
-                <div class="col-4 custom">
-                    <img src="dodge.jpg" alt="dodge">
-                    <button onclick="dodge()" class="btn">Dodge</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="game.js"></script>
-</body>
-
-</html>
+        <script src="game.js"></script>
+    </body>
+    
+    </html>
